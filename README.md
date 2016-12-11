@@ -6,7 +6,7 @@
 Once you have a project that generate on build a git.properties file.
 
 ```
-~$ python hash_check.py -a <path_to_jar>
+~$ python check.py -a <path_to_jar>
 ```
 
 And the output will be something similar to
