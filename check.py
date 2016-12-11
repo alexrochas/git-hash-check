@@ -19,11 +19,11 @@ if __name__ == '__main__':
     try:
         opts, args = getopt.getopt(sys.argv[1:], "ha:", ["artifact="])
     except getopt.GetoptError:
-        print('hash_check.py -a <artifact_path>')
+        print('check.py -a <artifact_path>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('hash_check.py -a <artifact_path>')
+            print('check.py -a <artifact_path>')
             sys.exit()
         elif opt in ("-a", "--artifact"):
             artifact = arg
