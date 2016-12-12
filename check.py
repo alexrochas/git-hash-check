@@ -10,7 +10,7 @@ def show_jar_classes(jar_file):
         lst = zf.infolist()
         for zi in lst:
             fn = zi.filename
-            if fn == 'git.properties':
+            if 'git.properties' in fn:
                     print(zf.read(fn).decode('utf-8'))
     finally:
         zf.close()
